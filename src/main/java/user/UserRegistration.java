@@ -56,5 +56,18 @@ public class UserRegistration {
 		
 	}
 	
+	public String checkPhoneNumber(String s) {
+		if(s.indexOf(' ')==2) {
+			if(s.length()-s.indexOf(' ')-1==10) {
+				return s;
+			}else return null;
+		}else return null;
+	}
+	
+	public String checkPassword(String s) {
+		if(s.length()>7) {
+			return s;
+		}else return null;
+	}
 	
 }
