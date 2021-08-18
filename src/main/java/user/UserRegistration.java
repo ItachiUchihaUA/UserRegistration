@@ -74,7 +74,20 @@ public class UserRegistration {
 				}
 			}
 			if(flag==1) {
-				return s;
+				int flag2=0;
+				char [] num = {'0','1','2','3','4','5','6','7','8','9'};
+				for(int i = 0; i<s.length(); i++) {
+					for(int j = 0; j< num.length ; j++) {
+						if(s.charAt(i)==num[j]) {
+							flag2=1;
+						}
+					}
+				}
+				if(flag2==1) {
+					return s;
+				}
+				
+				return null;
 			}
 			
 			return null;
