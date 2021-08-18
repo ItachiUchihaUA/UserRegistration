@@ -10,7 +10,7 @@ public class UserRegistrationTest {
 		
 	@Test
 	public void shoulBeMoreThen3LetterAndCaptial() {
-		assertEquals( "Mano" , c.enterFirstName("Mano"));
+		assertEquals( "Mano" , c.checkFirstName("Mano"));
 	}
 
 }
