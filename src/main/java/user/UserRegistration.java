@@ -66,7 +66,18 @@ public class UserRegistration {
 	
 	public String checkPassword(String s) {
 		if(s.length()>7) {
-			return s;
+			int flag = 0;
+			for(int i = 0 ; i<s.length(); i++) {
+				String u = s.toUpperCase();
+				if(s.charAt(i)==u.charAt(i)) {
+					flag=1;
+				}
+			}
+			if(flag==1) {
+				return s;
+			}
+			
+			return null;
 		}else return null;
 	}
 	
